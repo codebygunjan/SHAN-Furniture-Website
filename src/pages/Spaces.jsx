@@ -45,7 +45,7 @@ const Spaces = () => {
       <h1 className="md:text-4xl text-3xl text-gray-700/80 capitalize mx-2">
         explore beautiful spaces
       </h1>
-      <p className="my-2 text-gray-500 md:mx-2.5 mx-1 w-155">
+      <p className="my-2 text-gray-500 md:mx-2.5 mx-1 md:w-155 w-80 mr-1">
         Discover inspiration for every corner of your home. from cozy living
         rooms to peaceful place, find perfect space for your style.
       </p>

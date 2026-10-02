@@ -269,10 +269,13 @@ const CollectionPage = () => {
             const alreadyAdded = cart.some((item) => item.id === card.id);
 
             return (
-              <div key={card.id} className="p-2 bg-white shadow-md rounded-md">
+              <div
+                key={card.id}
+                className="p-2 bg-white shadow-md rounded-md sm:ml-0 ml-6"
+              >
                 <div className="relative">
                   <img
-                    className="lg:h-55 h-55 w-full object-cover bg-center"
+                    className="sm:h-55 h-45 w-full object-cover bg-center"
                     src={card.image}
                     alt=""
                   />
@@ -287,7 +290,7 @@ const CollectionPage = () => {
                     />
                   </button>
                 </div>
-                <div className="pt-2 px-3">
+                <div className="sm:pt-2 sm:px-3 pt-1">
                   <h1 className="text-lg text-gray-800/90 font-medium">
                     {card.name}
                   </h1>
@@ -302,7 +305,7 @@ const CollectionPage = () => {
                   <button
                     disabled={alreadyAdded}
                     onClick={() => addToCart(card)}
-                    className={`flex gap-2 items-center justify-center text-gray-600 cursor-pointer w-[70%] mt-5 border mx-auto border-gray-400 p-1.5 my-2 rounded-3xl duration-200 ${alreadyAdded ? "bg-purple-800 text-white" : "bg-transparent hover:bg-gray-200 active:scale-97"} `}
+                    className={`flex gap-2 items-center justify-center text-gray-600 cursor-pointer w-[70%] sm:mt-5 border mx-auto border-gray-400 p-1.5 my-2 rounded-3xl duration-200 ${alreadyAdded ? "bg-purple-800 text-white" : "bg-transparent hover:bg-gray-200 active:scale-97"} `}
                   >
                     <ShoppingCart
                       size={alreadyAdded ? 0 : 16}

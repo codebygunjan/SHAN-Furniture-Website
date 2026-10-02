@@ -113,7 +113,7 @@ const Navbar = () => {
 
         <svg
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className={`h-6 w-6 cursor-pointer ${isScrolled ? "invert" : ""}`}
+          className={`h-6 w-6 cursor-pointer `}
           fill="none"
           stroke="currentColor"
           strokeWidth="2"

@@ -51,7 +51,7 @@ const Materials = () => {
         <h1 className="md:text-4xl text-3xl text-gray-700/80 capitalize mx-2">
           The Beauty of Materials
         </h1>
-        <p className="my-2 text-gray-500 md:mx-2.5 mx-1 w-155">
+        <p className="my-2 text-gray-500 md:mx-2.5 mx-1 md:w-155 w-80 mr-1">
           Discover the textures, tones, and natural character behind every SHAN
           piece. Each material tells a story - of nature, craftsmanship and
           timeless design.

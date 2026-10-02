@@ -10,7 +10,7 @@ const Home = () => {
   const curatedRef = useRef();
   const featuredRef = useRef();
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero curatedRef={curatedRef} />
       <div ref={curatedRef} className="scroll-mt-29">
         <CuratedCollections />
