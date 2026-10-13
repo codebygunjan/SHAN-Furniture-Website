@@ -9,7 +9,7 @@ const TestimonialCard = ({ testimonial }) => {
           className="md:h-15 md:w-15 h-10 w-10 rounded-full object-cover bg-center"
           src={testimonial.image}
         />
-        <h1 className="md:text-md text-gray-700 ">{testimonial.name}</h1>
+        <h1 className="md:text-md text-gray-400 ">{testimonial.name}</h1>
       </div>
       <div className="flex gap-1">
         <Star color="orange" size={14} fill="orange" />
@@ -18,9 +18,7 @@ const TestimonialCard = ({ testimonial }) => {
         <Star color="orange" size={14} fill="orange" />
         <Star color="orange" size={14} fill="orange" />
       </div>
-      <p className="md:text-sm text-xsm text-gray-700/80">
-        {testimonial.review}
-      </p>
+      <p className="md:text-sm text-xsm text-gray-400">{testimonial.review}</p>
     </div>
   );
 };

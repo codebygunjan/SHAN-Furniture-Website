@@ -130,7 +130,7 @@ const CartPage = () => {
       {cart.length >= 1 && (
         <div className="pt-10 mt-10 lg:w-[40%] sm:mx-15 mx-5 bg-white min-h-80 self-start">
           <div className="sm:px-10 px-5">
-            <h1 className="text-3xl whitespace-nowrap px-5 capitalize pb-2.5 border-b border-gray-300">
+            <h1 className="text-3xl whitespace-nowrap px-5 capitalize pb-2.5 border-b border-gray-300 text-black">
               order summary
             </h1>
             <div className="mt-7 text-gray-600">

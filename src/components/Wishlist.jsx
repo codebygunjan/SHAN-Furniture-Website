@@ -38,7 +38,7 @@ const Wishlist = () => {
                   <p>{furnitureCard.type}</p>
                   <p>• {furnitureCard.material}</p>
                 </div>
-                <h3 className="p-1.5 bg-amber-100/30 inline rounded-lg">
+                <h3 className="p-1.5 bg-amber-100/30 text-black inline rounded-lg">
                   ₹ {furnitureCard.price}
                 </h3>
                 <div className="flex justify-center">
@@ -59,7 +59,7 @@ const Wishlist = () => {
 
       {wishlist.length === 0 && (
         <div className="text-center py-2">
-          <h1 className="md:text-3xl text-2xl font-medium text-gray-700/80 word-space">
+          <h1 className="md:text-3xl text-2xl font-medium text-gray-500/80 word-space">
             Your Wishlist is Empty
           </h1>
           <p className="text-gray-500 py-2 px-2 text-sm">
@@ -70,7 +70,7 @@ const Wishlist = () => {
             onClick={() => {
               navigate("/collections");
             }}
-            className="flex mx-auto gap-2 border border-gray-400 p-1 rounded-2xl px-3 m-3 bg-orange-200 hover:bg-orange-300 duration-400 active:scale-96 font-medium text-gray-600 outline-none"
+            className="flex mx-auto gap-2 border border-gray-400 p-1 rounded-2xl px-3 m-3  bg-orange-200 hover:bg-orange-300 duration-400 active:scale-96 font-medium text-gray-600 outline-none"
           >
             Explore Collection <MoveRight />
           </button>

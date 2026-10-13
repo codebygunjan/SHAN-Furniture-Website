@@ -45,10 +45,10 @@ const Materials = () => {
   }, [selectedMaterial]);
 
   return (
-    <div className="mt-40 lg:mx-5 mx-1 sm:mx-3 mb-10">
+    <div className="mt-30 pt-10 lg:mx-5 mx-1 sm:mx-3 mb-10">
       {/* heading info */}
       <div>
-        <h1 className="md:text-4xl text-3xl text-gray-700/80 capitalize mx-2">
+        <h1 className="md:text-4xl text-3xl capitalize mx-2">
           The Beauty of Materials
         </h1>
         <p className="my-2 text-gray-500 md:mx-2.5 mx-1 md:w-155 w-80 mr-1">

@@ -154,7 +154,7 @@ const CollectionPage = () => {
               >
                 {showFilters ? "Hide Filters" : "Show Filters"}
               </button>
-              <span className="lg:block hidden">Filters</span>
+              <span className="lg:block hidden text-gray-400">Filters</span>
             </p>
             <button
               onClick={() => {
@@ -175,7 +175,7 @@ const CollectionPage = () => {
               <h1 className="text-gray-100 rounded text-lg bg-gray-500/95 px-2 my-4 py-1">
                 Types
               </h1>
-              <div className="mt-2 text-gray-600 text-[12px] lg:text-[15px] flex flex-col items-start lg:gap-0.5">
+              <div className="mt-2 text-gray-400 text-[12px] lg:text-[15px] flex flex-col items-start lg:gap-0.5">
                 {allTypes.map((type) => (
                   <button
                     key={type}
@@ -194,7 +194,7 @@ const CollectionPage = () => {
               <h1 className="text-gray-100 rounded text-lg bg-gray-500/95 px-2 my-4 py-1">
                 Materials
               </h1>
-              <div className="mt-2 text-gray-600 text-[12px] lg:text-[15px] flex flex-col items-start lg:gap-0.5">
+              <div className="mt-2 text-gray-400 text-[12px] lg:text-[15px] flex flex-col items-start lg:gap-0.5">
                 {allMaterials.map((material) => (
                   <button
                     key={material}
@@ -213,7 +213,7 @@ const CollectionPage = () => {
               <h1 className="text-gray-100 rounded text-lg bg-gray-500/95 px-2 my-4 py-1">
                 Prices
               </h1>
-              <div className="mt-2 text-gray-600 text-[12px] lg:text-[15px] flex flex-col items-start lg:gap-0.5">
+              <div className="mt-2 text-gray-400 text-[12px] lg:text-[15px] flex flex-col items-start lg:gap-0.5">
                 {allPrices.map((price) => (
                   <button
                     key={price}
@@ -232,7 +232,7 @@ const CollectionPage = () => {
               <h1 className="text-gray-100 rounded text-lg bg-gray-500/95 px-2 my-4 py-1">
                 Prices
               </h1>
-              <div className="mt-2 text-gray-600 text-[12px] lg:text-[15px] flex flex-col items-start lg:gap-0.5">
+              <div className="mt-2 text-gray-400 text-[12px] lg:text-[15px] flex flex-col items-start lg:gap-0.5">
                 {allOptions.map((sort) => (
                   <button
                     key={sort}
@@ -298,7 +298,7 @@ const CollectionPage = () => {
                     <p>{card.type}</p>
                     <p>• {card.material}</p>
                   </div>
-                  <h3 className="p-1.5 bg-amber-100/30 inline rounded-lg">
+                  <h3 className="p-1.5 bg-amber-100/30 text-black inline rounded-lg">
                     ₹ {card.price}
                   </h3>
 

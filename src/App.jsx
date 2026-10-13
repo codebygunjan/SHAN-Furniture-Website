@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
@@ -9,10 +9,16 @@ import Spaces from "./pages/Spaces";
 import Materials from "./pages/Materials";
 import CartPage from "./pages/CartPage";
 import ScrollToTop from "./components/ScrollToTop";
+import { ThemContext } from "./context/ThemeToggle";
 
 const App = () => {
+  const { theme } = useContext(ThemContext);
   return (
-    <div>
+    <div
+      className={
+        theme === "dark" ? "bg-black text-white" : "bg-white text-black"
+      }
+    >
       <Navbar />
       <ScrollToTop />
       <div className="min-h-[70vh]">

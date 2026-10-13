@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
 import { UserButton, useClerk, useUser } from "@clerk/react";
-import { Heart, ShoppingCart } from "lucide-react";
+import { Heart, Moon, ShoppingCart, Sun } from "lucide-react";
+import { ThemContext } from "../context/ThemeToggle";
 const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
@@ -11,6 +12,7 @@ const Navbar = () => {
     { name: "Materials", path: "/materials" },
   ];
 
+  const { theme, setTheme } = useContext(ThemContext);
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { openSignIn } = useClerk();
@@ -56,6 +58,13 @@ const Navbar = () => {
       {/* Desktop Right */}
       <div className="hidden md:flex items-center lg:gap-4 md:gap-2 md:px-3">
         <div className="flex gap-7">
+          <button
+            onClick={() => {
+              setTheme(theme === "light" ? "dark" : "light");
+            }}
+          >
+            {theme === "light" ? <Moon /> : <Sun />}
+          </button>
           <NavLink
             to="/wishlist"
             className={({ isActive }) => {
@@ -92,6 +101,13 @@ const Navbar = () => {
       {/* Mobile Menu Button */}
       <div className="flex items-center gap-7 md:hidden">
         <div className="flex gap-6">
+          <button
+            onClick={() => {
+              setTheme(theme === "light" ? "dark" : "light");
+            }}
+          >
+            {theme === "light" ? <Moon size={19} /> : <Sun size={19} />}
+          </button>
           <Link to="/wishlist">
             <Heart size={18} color="#5D6570" strokeWidth={2.3} />
           </Link>
